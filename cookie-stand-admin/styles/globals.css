@@ -1,27 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+  background-color: #89E4A1;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  color: black;
+  font-size: 2rem;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2 {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+header {
+  color: #37AD57;
+  background-color: #37AD57;
+  padding: 1rem;
+  font-size: 45px;
+  flex: items-center;
+  justify-content: p-4;
+}
+form {
+  margin-top: 2rem;
+  padding: 18px;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+button {
+  background-color: #008080;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: .1rem;
+  font-weight: 500;
+  width: 80% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary {
+  background-color: #37AD57;
+}
+p {
+  color: rgb(91, 89, 89);
+  text-align: center;
+}
+footer {
+  color: rgb(38, 37, 37);
+  background-color: #37AD57;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex label {
+  margin-right: 1rem;
 }
