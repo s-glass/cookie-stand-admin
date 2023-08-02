@@ -40,6 +40,60 @@
 
 - clone repo
 - make sure brew is up to date: `brew upgrade` and `brew update`
+- make sure installs are up to date: `npm install`
+- `npm run dev`
+- runs at `localhost:3000`
+
+## Libraries / Requirements
+
+- tailwindcss
+
+## Tests
+
+- no testing yet
+
+----------------------------------------------
+
+# Lab - Class 38
+
+## Project: cookie-stand-admin
+
+- Author: Sarah Glass for Python 401
+
+- Collaborated with Anthony, Dan, Jared, and Andrew at a Remo table.
+
+## Overview
+
+- Your job is to continue work on Cookie Stand Admin app using Next.js and style using Tailwind CSS.
+
+
+## Feature Tasks and Requirements
+
+- The specs for lab are screen shots Cookie Stand Admin Version 2 and Cookie Stand Admin No Stands
+- pages/Index.js should return top level component <CookieStandAdmin>
+- <CookieStandAdmin> details: will contain the following components:
+<Head>, <Header>, <main>, <CreateForm>, <ReportTable>, and<Footer> component that matches spec.
+- Import time slot data from supplied data.js file.
+- <CreateForm> component details: object should have hourly_sales property with hard coded [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
+- <ReportTable> details:  if reports is empty then render <h2>No Cookie Stands Available</h2> ; If reports is not empty then render a table with thead,tbody and tfoot components.
+- Components should render to match spec.
+- Style all components using TailwindCSS utility classes to match spec.
+
+## Links and Resources
+
+- class notes and rewatching video
+- screenshot image of the specs
+- TA and peer help
+
+## Setup
+
+- no venv needed
+
+## How to initialize/run your application
+
+- clone repo
+- make sure brew is up to date: `brew upgrade` and `brew update`
+- make sure installs are up to date: `npm install`
 - `npm run dev`
 - runs at `localhost:3000`
 
