@@ -1,12 +1,10 @@
-import Link from "next/link";
+export default function Footer({ cookieStands }) {
+  
+  const numberOfLocations = cookieStands ? cookieStands.length : 4;
 
-export default function Footer() {
-    return (
-        <footer className="p-4 mt-8 bg-gray-500 text-gray-50 flex justify-between">
-            <p>Expert Eight Ball &copy;{new Date().getFullYear()}</p>
-            <Link href="/careers">
-                Careers
-            </Link>
-        </footer>
-    );
+  return (
+    <footer className="footer" style={{ fontFamily: 'Arial'}}>
+      <p>{numberOfLocations} Locations World Wide</p>
+    </footer>
+  );
 }

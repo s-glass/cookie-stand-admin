@@ -1,9 +1,25 @@
-export default function EightBall({ question }) {
+import CreateForm from '@/components/CreateForm';
+import ReportTable from '@/components/ReportTable';
+import { useState } from 'react';
+import { locations } from '@/components/CreateForm'
+
+export default function Main({ locations }) {
+  const [cookieStands, setCookieStands] = useState([]);
+
+  const handleLocationCreate = (newLocation) => {
+    setCookieStands([...cookieStands, newLocation]);
+  };
+
   return (
-      <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
-          <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
-              <p className="text-xl text-center">{question}</p>
-          </div>
-      </div>
+
+    <div className="main">
+      <CreateForm onLocationCreate={handleLocationCreate} />
+      {cookieStands.length > 0 ? (
+        <ReportTable cookieStands={cookieStands} />
+      ) : (
+        <p>No Cookie Stands Available</p>
+      )}
+    </div>
+
   );
 }
