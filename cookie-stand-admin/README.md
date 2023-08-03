@@ -60,7 +60,7 @@
 
 - Author: Sarah Glass for Python 401
 
-- Collaborated with Anthony, Dan, Jared, and Andrew at a Remo table.
+- Collaborated with Anthony, Dan, Logan, Slava, and Andrew at a Remo table.
 
 ## Overview
 
@@ -94,8 +94,8 @@
 - clone repo
 - make sure brew is up to date: `brew upgrade` and `brew update`
 - make sure installs are up to date: `npm install`
-- `npm run dev`
-- runs at `localhost:3000`
+- run server at `npm run dev`
+- page runs at `localhost:3000`
 
 ## Libraries / Requirements
 
