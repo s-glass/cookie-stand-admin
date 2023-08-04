@@ -104,3 +104,68 @@
 ## Tests
 
 - no testing yet
+
+-----------------------------
+
+# Lab - Class 39
+
+## Project: cookie-stand-admin
+
+- Author: Sarah Glass for Python 401
+
+- Collaborated with Anthony, Dan, Logan, Slava, and Andrew at a Remo table.
+
+## Overview
+
+Your job is to continue work on Cookie Stand Admin app using Next.js and style using Tailwind CSS.
+
+But now you’ll be working with data from a remote API!
+
+
+## Feature Tasks and Requirements
+
+- All features from versions 1 an 2 should be complete.
+- The specs for lab are screen shots Cookie Stand Admin Version 3 and Cookie Stand Admin Login
+pages/index.js should export a <Home> component.
+- <Home> requirements
+- If user is NOT logged in then <LoginForm> should render.
+If user IS logged in then <CookieStandAdmin> component should render.
+- <LoginForm> requirements
+- Should receive a function passed in to call when form is submitted.
+- The function should be called with username and password arguments.
+- <CookieStandAdmin> requirements
+- When user fills out form to add location then the data should be posted to API
+- When API response is complete then <CookieStandTable> should render latest data immediately.
+- Should NOT require a page refresh.
+- <CookieStandTable> requirements
+- Component should continue to display Cookie Stand info as in version 2
+- Add a delete icon in each stand’s location cell.
+- Clicking delete icon should immediately delete the Cookie Stand.
+- Should NOT require a page refresh.
+- Continue to style all components using TailwindCSS utility classes to match spec.
+
+## Links and Resources
+
+- class notes and rewatching video
+- screenshot image of the specs
+- TA and peer help
+
+## Setup
+
+- no venv needed
+
+## How to initialize/run your application
+
+- continue working with previously worked on repo, check your api repo has tokens ready
+- install `npm install jsonwebtoken`
+- install `npm install swr`
+- run server at `npm run dev`
+- page runs at `localhost:3000`
+
+## Libraries / Requirements
+
+- tailwindcss
+
+## Tests
+
+- no testing yet
